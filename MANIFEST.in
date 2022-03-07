@@ -1,0 +1,3 @@
+include README.md
+include pyoat/arrays/*.mat
+include pyoat/_examples/*.py
