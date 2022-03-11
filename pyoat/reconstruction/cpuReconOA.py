@@ -500,7 +500,7 @@ class cpuMB():
         self._highCutOff        = 6e6
         self._fOrder            = 3
         self._numIterations     = 5
-        self._regMethod         = 'tikonov'
+        self._regMethod         = None
         self._lambdaReg         = 15e6
 
     #--------------------------------#

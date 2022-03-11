@@ -43,7 +43,7 @@ mb.wavelengths      = [800]             # wavelengths used in acquisition
 mb.lowCutOff        = 0.1e6             # low cutoff for bandpass (default: 0.1e6)
 mb.highCutOff       = 6e6               # high cutoff for bandpass (default: 6e6)
 mb.iterationNum     = 5                 # iteration number for lsqr minimization
-mb.regMethod        = 'tikonov'         # for model matrix only, give None (only tikonov implemented so far)
+mb.regMethod        = None         		# for model matrix only, give None (only tikonov implemented so far)
 mb.lambdaReg 		= 0
 
 #%% Calculate model matrix
