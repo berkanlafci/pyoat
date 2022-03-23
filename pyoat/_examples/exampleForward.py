@@ -8,7 +8,6 @@
 #%% Start logging
 import logging
 
-from oat.simulation.forwardOperator import forward
 logging.basicConfig(filename='exampleForward.log', filemode='w', level=logging.INFO)
 logging.info('  Script      "exampleForward"   	: exampleForward.py')
 
