@@ -72,6 +72,8 @@ class oaReader():
                 self.sigMat = np.expand_dims(self.sigMat, axis=2)
             else:
                 self.sigMat = self.sigMat
+
+        self.sigMat = self.sigMat[2:,...]
         
         endTime = time.time()
         print('time elapsed: %.2f' %(endTime-startTime))

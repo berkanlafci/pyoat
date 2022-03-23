@@ -23,10 +23,10 @@ def sigMatNormalize(sigMatIn):
     print('***** normalization *****')
     startTime       = time.time()
 
-    sigMatOut = np.zeros(np.shape(sigMatIn[2:,...]))
+    sigMatOut = np.zeros(np.shape(sigMatIn))
 
     for i in range(np.shape(sigMatIn)[2]):
-        singleF             = sigMatIn[2:,:,i]
+        singleF             = sigMatIn[:,:,i]
         meanF               = np.mean(singleF, axis=0)
         sigMatOut[:,:,i]    = singleF - np.tile(meanF, (np.shape(singleF)[0], 1))
 

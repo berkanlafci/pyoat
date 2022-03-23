@@ -384,7 +384,7 @@ class cpuBP():
         print('***** reconstruction *****')
         startTime       = time.time()
 
-        timePoints      = np.linspace(0, (self.nSamples-2)/fSampling, self.nSamples-2) + self.delayInSamples/fSampling
+        timePoints      = np.linspace(0, (self.nSamples)/fSampling, self.nSamples) + self.delayInSamples/fSampling
 
         # reconstructed image (output of this function)
         imageRecon = np.zeros((pixelNumber, pixelNumber, self.numWavelengths, self.numRepetitions))
