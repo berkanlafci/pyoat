@@ -1,5 +1,5 @@
 #-----
-# Description   : Example script to create model matrix
+# Description   : Example script to apply forward model
 # Date          : March 2022
 # Author        : Berkan Lafci
 # E-mail        : lafciberkan@gmail.com
@@ -7,7 +7,6 @@
 
 #%% Start logging
 import logging
-
 logging.basicConfig(filename='exampleForward.log', filemode='w', level=logging.INFO)
 logging.info('  Script      "exampleForward"   	: exampleForward.py')
 
