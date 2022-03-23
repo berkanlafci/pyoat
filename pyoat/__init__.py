@@ -18,6 +18,9 @@ from pyoat.readers import oaReader
 from pyoat.preprocessing import sigMatFilter
 from pyoat.preprocessing import sigMatNormalize
 
+# simulation
+from pyoat.simulation import forward
+
 # utils
 from pyoat.utils import saveImagePng, saveImageMat, saveSignalPng, saveSignalMat, saveImageH5
 from pyoat.utils import calculateDelay
