@@ -73,6 +73,7 @@ class oaReader():
             else:
                 self.sigMat = self.sigMat
 
+        # remove first 2 samples as they do not have signals
         self.sigMat = self.sigMat[2:,...]
         
         endTime = time.time()
