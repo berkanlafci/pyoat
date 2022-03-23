@@ -937,6 +937,9 @@ class cpuMB():
 
         from pyoat import sigMatFilter, sigMatNormalize
 
+        if np.ndim(sigMat) == 2:
+            sigMat = np.expand_dims(sigMat, axis=2)
+
         pixelNumber         = self.pixelNumber
         self.numRepetitions = int(np.ceil(np.shape(sigMat)[2]/self.numWavelengths))
 
